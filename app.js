@@ -17,29 +17,23 @@ const port = process.env.PORT || config.get("port");
 // Use Express app.get() methods to configure endpoints
 
 // declare your callback function the old way
-/**
-app.get('/', function (req, res) {
-  res.send('Welcome to the default page!  <br> <br>' +
-    'Try going to different URIs by adding these at the end: <br> <br>' +
-    '/hello <br>' +
-    '/big <br>' +
-    '/json <br>' +
-    '/greeting/yourname <br>' +
-    '/yo/Dr.Rogers <br>' +
-    '/fortune <br>' +
-    '/fancy/?first=Denise&last=Case <br>' +
-    '<br> <br>' +
-    'Fork the source code from <a href="https://github.com/denisecase/node-express-app">https://github.com/denisecase/node-express-app</a>'
-  )
-})
-*/
+
+
 
 app.get('/', function (req, res) {
     res.send('Welcome to my Module 4 assignment  on creating Express App<br> ' +
-    'This reponse is triggered when the use enters "/" in the URL'
+
+    'This reponse is triggered when the use enters "/" in the URL <br>' +
+  ' Here are few links which were helpful to me while build this app'+
+  '<ul>' +
+    '<li>' +
+      '<a href = "https://expressjs.com/en/starter/generator.html">Starter pack</a>' +
+    '</li>'+
+  '</ul>'
+
     )
   })
-
+ 
 
 
 // or use the new arrow function syntax
